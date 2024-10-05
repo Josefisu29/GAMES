@@ -1,6 +1,4 @@
 body {
-  display: flex;
-  flex-wrap: wrap;
   overflow: hidden;
   background-image: url("clipart211491.png");
   height: 100vh;
@@ -10,6 +8,7 @@ body {
   background-size: contain;
   background-position: center;
   background-attachment: fixed;
+  overflow: hidden;
 }
 button {
   height: 50px;
@@ -22,6 +21,7 @@ button {
 button:hover {
   background-color: white;
   color: brown;
+  text-align: center;
 }
 .level:hover {
   display: block;
@@ -29,4 +29,21 @@ button:hover {
 .Level:hover {
   background-color: burlywood;
   margin-top: 50px;
+}
+@media screen and (max-width: 480px) {
+  body {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  h1 {
+    color: grey;
+  }
+  button {
+    background-color: chocolate;
+  }
+  button:hover {
+    background-color: burlywood;
+    color: whitesmoke;
+  }
 }
