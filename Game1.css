@@ -40,6 +40,7 @@ button:hover {
     color: grey;
   }
   button {
+    width: 70px;
     background-color: chocolate;
   }
   button:hover {
